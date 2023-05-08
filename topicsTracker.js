@@ -1,12 +1,12 @@
 const topics = {
-    "🍗 Hungry": 15, // Initialize topic "hungry" with a value of 15
-    "🔞 Horny": 15, // Initialize topic "horny" with a value of 15
-    "🤬 Angry / agitated": 15, // Initialize topic "angry" with a value of 15
-    "😬 Anxious / stressed": 15, // Initialize topic "anxious" with a value of 15
-    "👤 Lonely": 15, // Initialize topic "lonely" with a value of 15
-    "🛌 Tired / uncomfortable": 15, // Initialize topic "tired" with a value of 15
-    "☹ Sad": 15, // Initialize topic "sad" with a value of 15
-    "😒 Bored": 15, // Initialize topic "bored" with a value of 15
+    "🍗 Hungry": 0,
+    "🔞 Horny": 0,
+    "🤬 Angry / agitated": 0,
+    "😬 Anxious / stressed": 0,
+    "👤 Lonely": 0,
+    "🛌 Tired / uncomfortable": 0,
+    "☹ Sad": 0,
+    "😒 Bored": 0,
 };
 
 function displayTopics() {
@@ -32,8 +32,8 @@ function displayTopics() {
         sliderContainer.classList.add("slider-container"); // Add the "slider-container" class to the new div element
         const slider = document.createElement("input"); // Create a new input element for the slider
         slider.type = "range"; // Set the input type of the slider to "range"
-		slider.min = "1"; // Set the minimum value of the slider to 1
-		slider.max = "30"; // Set the maximum value of the slider to 30
+		slider.min = "-15"; // Set the minimum value of the slider to 1
+		slider.max = "15"; // Set the maximum value of the slider to 30
 		slider.step = "0.25"; // Set the step value of the slider to 0.25
 		slider.value = value; // Set the current value of the slider to the topic value
         slider.addEventListener("input", () => updateDisplayValue(topic, slider.value, topicValue)); // Add an "input" event listener to update the displayed value when the slider is interacted with
@@ -77,12 +77,12 @@ function updateTopicValue(topic, newValue) {
 
 function editTopicValue(topic) {
     const oldValue = topics[topic]; // Get the current value of the specified topic
-    const newValue = parseFloat(prompt(`Enter a new value for "${topic}" (1-30):`, oldValue)); // Prompt the user to enter a new value for the topic
-    if (1 <= newValue && newValue <= 30) { // If the new value is within the valid range (1-30)
-        topics[topic] = newValue; // Update the value of the specified topic with the new value
-        displayTopics(); // Refresh the display of the topics
-    } else { // If the new value is outside the valid range
-        alert("Invalid value. Please enter a number between 1 and 30."); // Display an alert to the user
+   const newValue = parseFloat(prompt(`Enter a new value for "${topic}" (-15 to 15):`, oldValue));
+    if (-15 <= newValue && newValue <= 15) {
+        topics[topic] = newValue;
+        displayTopics();
+    } else {
+        alert("Invalid value. Please enter a number between -15 and 15.");
     }
 }
 
@@ -117,7 +117,7 @@ function exportToClipboard() {
 }
 function resetTopics() {
     for (const topic in topics) {
-        topics[topic] = 15; // Reset the value of the topic to 15
+        topics[topic] = 0; // Reset the value of the topic to 15
     }
     displayTopics(); // Refresh the display of the topics
 }

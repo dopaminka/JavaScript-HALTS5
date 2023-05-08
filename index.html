@@ -6,6 +6,9 @@
     <title>🔴 HALTS 🔴</title>
     <!-- Add the CSS styles for the layout and appearance -->
    <style>
+   h1 {
+    text-align: center;
+}
     /* Set the default font for the entire document (body) */
     body {
         font-family: Arial, sans-serif;
@@ -14,49 +17,59 @@
 	
     /* Set the layout and alignment properties for the container element */
     .container {
-        display: flex;              /* Use the flexbox layout model */
-        flex-direction: column;     /* Stack the child elements vertically */
-        align-items: center;        /* Center the child elements horizontally */
-		
-		background-color: blue
+         display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    max-width: 1000px; /* Set a maximum width for the container */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto;
 
     }
   
     /* Add some margin at the bottom of the topics list */
     #topicsList {
-        margin-bottom: 15px;
-		background-color: white
+         margin-bottom: 15px;
+    min-width: 330px;
+    background-color: white;
+    width: 100%; /* Make it responsive to the container width */
     }
     
     /* Set the layout and alignment properties for each topic row */
     .topic {
-        display: flex;              /* Use the flexbox layout model */
-        align-items: center;        /* Align the child elements vertically at the center */
-        margin-bottom: 10px;         /* Add some margin at the bottom of each topic row */
-		background-color: red
+         display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 100%; /* Make it responsive to the container width */
 		
     }
     
     /* Set the layout and alignment properties for the topic info, edit name button, slider container, and edit value button */
     .slider-container {
-        display: flex;
-        text-align: center;
-		background-color: green
+         display: flex;
+    text-align: center;
+    background-color: white;
+    width: 100%; /* Make it responsive to the container width */
     } 
 	.topic-info {
         display: flex;
-		min-width: 100px;
-		max-width: 100px;
-
+		min-width: 85px;
+		max-width: 85px;
+font-size: 13px;
         text-align: left;         /* Center the text of each element */
-		background-color: gray
+		background-color: white
 		
     }
     .edit-name-btn,
     .edit-value-btn {
         display: flex;
         text-align: left;         /* Center the text of each element */
-		background-color: pink
+		min-width: 50px;
+		max-width: 50px;
+		font-size: 13px;
+		background-color: white
+		
 		
     }
 
@@ -64,8 +77,9 @@
     .topic-value {
         display: flex;
         min-width: 30px; /* Adjust this value based on your preferred width */
-        text-align: center;
-		background-color: yellow
+        text-align: left;
+		font-size: 13px;
+		background-color: white
     }
 	
 	

@@ -23,7 +23,7 @@ function displayTopics() {
         topicDiv.appendChild(topicInfo); // Append the topicInfo element to the topicDiv
 
         const editNameBtn = document.createElement("button"); // Create a new button element for editing the topic name
-        editNameBtn.textContent = "Edit\u00A0Name"; // Set the text content of the editNameBtn to "Edit Name"
+        editNameBtn.textContent = "Edit\nName"; // Set the text content of the editNameBtn to "Edit Name"
         editNameBtn.classList.add("edit-name-btn"); // Add the "edit-name-btn" class to the new button element
         editNameBtn.onclick = () => editTopicName(topic); // Set the onclick event handler for the editNameBtn
         topicDiv.appendChild(editNameBtn); // Append the editNameBtn to the topicDiv
@@ -42,7 +42,7 @@ function displayTopics() {
         topicDiv.appendChild(sliderContainer); // Append the sliderContainer to the topicDiv
 
         const editValueBtn = document.createElement("button"); // Create a new button element for editing the topic value
-        editValueBtn.textContent = "Edit\u00A0Value"; // Set the text content of the editValueBtn to "Edit Value"
+        editValueBtn.textContent = "Edit\nValue"; // Set the text content of the editValueBtn to "Edit Value"
         editValueBtn.classList.add("edit-value-btn"); // Add the "edit-value-btn" class to the new button element
         editValueBtn.onclick = () => editTopicValue(topic); // Set the onclick event handler for the editValueBtn
         topicDiv.appendChild(editValueBtn); // Append the editValueBtn to the topicDiv

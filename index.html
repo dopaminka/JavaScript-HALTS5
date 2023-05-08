@@ -11,11 +11,13 @@
         font-family: Arial, sans-serif;
     }
     
+	
     /* Set the layout and alignment properties for the container element */
     .container {
         display: flex;              /* Use the flexbox layout model */
         flex-direction: column;     /* Stack the child elements vertically */
         align-items: center;        /* Center the child elements horizontally */
+		
 		background-color: blue
 
     }
@@ -30,22 +32,22 @@
     .topic {
         display: flex;              /* Use the flexbox layout model */
         align-items: center;        /* Align the child elements vertically at the center */
-        margin-bottom: 30px;         /* Add some margin at the bottom of each topic row */
-		width: 700px;
+        margin-bottom: 10px;         /* Add some margin at the bottom of each topic row */
 		background-color: red
 		
     }
     
     /* Set the layout and alignment properties for the topic info, edit name button, slider container, and edit value button */
     .slider-container {
-        display: inline-block;
-        min-width: 400px; /* Adjust this value based on your preferred width */
+        display: flex;
         text-align: center;
 		background-color: green
     } 
 	.topic-info {
-        display: inline-block;
+        display: flex;
 		min-width: 100px;
+		max-width: 100px;
+
         text-align: left;         /* Center the text of each element */
 		background-color: gray
 		
@@ -60,8 +62,8 @@
 
    /* Set a fixed width for the topic-value element */
     .topic-value {
-        display: inline-block;
-        min-width: 60px; /* Adjust this value based on your preferred width */
+        display: flex;
+        min-width: 30px; /* Adjust this value based on your preferred width */
         text-align: center;
 		background-color: yellow
     }
@@ -69,7 +71,7 @@
 	
 	/* Set the width and appearance of the sliders */
 input[type=range] {
-    width: 90%;  /* Set the width of the slider */
+    width: 100%;  /* Set the width of the slider */
     -webkit-appearance: none; /* Override default appearance on Webkit browsers */
 }
 

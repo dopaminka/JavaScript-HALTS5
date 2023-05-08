@@ -16,10 +16,20 @@
         display: flex;              /* Use the flexbox layout model */
         flex-direction: column;     /* Stack the child elements vertically */
         align-items: center;        /* Center the child elements horizontally */
-		background-color: blue
-
+		background-color: white
+		max-width: 1200px; /* Set a maximum width for the container */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto;
     }
-  
+    /* Add a media query to target screens with a maximum width of 767px */
+@media (max-width: 767px) {
+    .topic {
+        width: 100%; /* Set the topic row width to 100% on small screens */
+    }
+    .slider-container {
+        min-width: 0; /* Remove the minimum width constraint on small screens */
+    }
+}
     /* Add some margin at the bottom of the topics list */
     #topicsList {
         margin-bottom: 15px;
@@ -31,8 +41,8 @@
         display: flex;              /* Use the flexbox layout model */
         align-items: center;        /* Align the child elements vertically at the center */
         margin-bottom: 30px;         /* Add some margin at the bottom of each topic row */
-		width: 700px;
-		background-color: red
+		width: 1000px;
+		background-color: white
 		
     }
     
@@ -41,29 +51,23 @@
         display: inline-block;
         min-width: 400px; /* Adjust this value based on your preferred width */
         text-align: center;
-		background-color: green
+		background-color: white
     } 
-	.topic-info {
-        display: inline-block;
-		min-width: 100px;
-        text-align: left;         /* Center the text of each element */
-		background-color: gray
-		
-    }
+	.topic-info,
     .edit-name-btn,
     .edit-value-btn {
-        display: flex;
+        flex: 1;                    /* Distribute the available space evenly among the child elements */
         text-align: left;         /* Center the text of each element */
-		background-color: pink
+		background-color: white
 		
     }
 
    /* Set a fixed width for the topic-value element */
     .topic-value {
         display: inline-block;
-        min-width: 60px; /* Adjust this value based on your preferred width */
+        min-width: 160px; /* Adjust this value based on your preferred width */
         text-align: center;
-		background-color: yellow
+		background-color: white
     }
 	
 	

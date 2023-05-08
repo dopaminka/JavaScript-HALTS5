@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔴 HALTS 🔴</title>
+    <!-- Add the CSS styles for the layout and appearance -->
+   <style>
+    /* Set the default font for the entire document (body) */
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Set the layout and alignment properties for the container element */
+    .container {
+        display: flex;              /* Use the flexbox layout model */
+        flex-direction: column;     /* Stack the child elements vertically */
+        align-items: center;        /* Center the child elements horizontally */
+		background-color: white
+		
+    }
+    
+    /* Add some margin at the bottom of the topics list */
+    #topicsList {
+        margin-bottom: 15px;
+		background-color: white
+    }
+    
+    /* Set the layout and alignment properties for each topic row */
+    .topic {
+        display: flex;              /* Use the flexbox layout model */
+        align-items: center;        /* Align the child elements vertically at the center */
+        margin-bottom: 30px;         /* Add some margin at the bottom of each topic row */
+		width: 1000px;
+		background-color: white
+		
+    }
+    
+    /* Set the layout and alignment properties for the topic info, edit name button, slider container, and edit value button */
+    .slider-container {
+        display: inline-block;
+        min-width: 400px; /* Adjust this value based on your preferred width */
+        text-align: center;
+		background-color: white
+    } 
+	.topic-info,
+    .edit-name-btn,
+    .edit-value-btn {
+        flex: 1;                    /* Distribute the available space evenly among the child elements */
+        text-align: left;         /* Center the text of each element */
+		background-color: white
+		
+    }
+
+   /* Set a fixed width for the topic-value element */
+    .topic-value {
+        display: inline-block;
+        min-width: 160px; /* Adjust this value based on your preferred width */
+        text-align: center;
+		background-color: white
+    }
+	
+	
+	/* Set the width and appearance of the sliders */
+input[type=range] {
+    width: 90%;  /* Set the width of the slider */
+    -webkit-appearance: none; /* Override default appearance on Webkit browsers */
+}
+
+/* Set the height and appearance of the slider thumb on Webkit browsers */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default appearance on Webkit browsers */
+    height: 20px; /* Set the height of the slider thumb */
+    width: 20px; /* Set the width of the slider thumb */
+    background: #007bff; /* Set the background color of the slider thumb */
+    cursor: pointer; /* Set the cursor style when hovering over the slider thumb */
+    border-radius: 50%; /* Set the border radius of the slider thumb */
+}
+
+/* Set the height and appearance of the slider thumb on Firefox */
+input[type=range]::-moz-range-thumb {
+    height: 16px; /* Set the height of the slider thumb */
+    width: 16px; /* Set the width of the slider thumb */
+    background: #007bff; /* Set the background color of the slider thumb */
+    cursor: pointer; /* Set the cursor style when hovering over the slider thumb */
+    border-radius: 50%; /* Set the border radius of the slider thumb */
+}
+
+/* Set the height and appearance of the slider track on Webkit browsers */
+input[type=range]::-webkit-slider-runnable-track {
+    height: 20px; /* Set the height of the slider track */
+    background: #ccc; /* Set the background color of the slider track */
+}
+
+/* Set the height and appearance of the slider track on Firefox */
+input[type=range]::-moz-range-track {
+    height: 5px; /* Set the height of the slider track */
+    background: #ccc; /* Set the background color of the slider track */
+}
+
+</style>
+
+</head>
+<body>
+    <h1>HALTS</h1>
+    <!-- Create a container to hold the topics list and the sort button -->
+    <div class="container">
+        <!-- Create an element to hold the topics list -->
+        <div id="topicsList"></div>
+        <!-- Create a sort button -->
+        <button id="sortBtn">Sort</button>
+		<!-- Add an export button after the sort button -->
+		<button id="exportBtn">Export to Clipboard</button>
+		<button id="resetBtn">Reset</button>
+
+
+    </div>
+    <!-- Include the JavaScript file to handle the logic -->
+    <script src="topicsTracker.js"></script>
+</body>
+</html>

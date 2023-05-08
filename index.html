@@ -17,9 +17,19 @@
         flex-direction: column;     /* Stack the child elements vertically */
         align-items: center;        /* Center the child elements horizontally */
 		background-color: white
-		
+		max-width: 1200px; /* Set a maximum width for the container */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto;
     }
-    
+    /* Add a media query to target screens with a maximum width of 767px */
+@media (max-width: 767px) {
+    .topic {
+        width: 100%; /* Set the topic row width to 100% on small screens */
+    }
+    .slider-container {
+        min-width: 0; /* Remove the minimum width constraint on small screens */
+    }
+}
     /* Add some margin at the bottom of the topics list */
     #topicsList {
         margin-bottom: 15px;
@@ -31,6 +41,7 @@
         display: flex;              /* Use the flexbox layout model */
         align-items: center;        /* Align the child elements vertically at the center */
         margin-bottom: 30px;         /* Add some margin at the bottom of each topic row */
+		width: 1000px;
 		background-color: white
 		
     }

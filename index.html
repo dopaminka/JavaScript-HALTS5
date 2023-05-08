@@ -97,7 +97,26 @@ input[type=range]::-moz-range-track {
     height: 5px; /* Set the height of the slider track */
     background: #ccc; /* Set the background color of the slider track */
 }
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
 
+    .topic {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .slider-container {
+        min-width: 100%;
+    }
+
+    input[type=range] {
+        width: 100%;
+    }
+}
 </style>
 
 </head>

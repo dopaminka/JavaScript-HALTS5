@@ -8,14 +8,15 @@
      <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <style>
    h1 {
-   font-size: 14px;
+   font-size: 15px;
+   font-style: Black;
     text-align: center;
-	 margin-bottom: 0px; /* Adjust this value to control the space */
+	 margin-bottom: 5px; /* Adjust this value to control the space */
 }
  h2 {
- margin-top: 1px;
+ margin-top: 5px;
     text-align: center;
-	font-size: 12px;
+	font-size: 13px;
 }
     /* Set the default font for the entire document (body) */
     body {
@@ -65,6 +66,7 @@
 		min-width: 85px;
 		max-width: 85px;
 font-size: 13px;
+letter-spacing: -0.2px;
         text-align: left;         /* Center the text of each element */
 		background-color: white
 		
@@ -73,9 +75,9 @@ font-size: 13px;
     .edit-value-btn {
         display: flex;
         text-align: left;         /* Center the text of each element */
-		min-width: 50px;
-		max-width: 50px;
-		font-size: 13px;
+		min-width: 48px;
+		max-width: 48px;
+		font-size: 12px;
 		background-color: white
 		
 		
@@ -86,7 +88,9 @@ font-size: 13px;
         display: flex;
         min-width: 30px; /* Adjust this value based on your preferred width */
         text-align: left;
-		font-size: 13px;
+		font-size: 12px;
+		letter-spacing: -0.2px;
+		margin-left: 1px;
 		background-color: white
     }
 	
@@ -127,13 +131,16 @@ input[type=range]::-moz-range-track {
     height: 30px; /* Set the height of the slider track */
     background: #ccc; /* Set the background color of the slider track */
 }
+#sortBtn{ 
+margin-bottom: 6px;}
 
+#exportBtn{ 
+margin-bottom: 6px;}
 </style>
 
 </head>
 <body>
     <h1>HALTS</h1>
-	<h2>An app that helps identifying needs and triggers based on popular "HALT" (Hungry, Angry, Lonely, Tired).<br> 0=Neutral | 15=very bad.</h2>
     <!-- Create a container to hold the topics list and the sort button -->
     <div class="container">
         <!-- Create an element to hold the topics list -->
@@ -148,5 +155,6 @@ input[type=range]::-moz-range-track {
     </div>
     <!-- Include the JavaScript file to handle the logic -->
     <script src="topicsTracker.js"></script>
+	<h2>An app for recovering addicts that may help developing a habit of identifying and tracking needs and triggers. <br>Based on the popular "HALT" (Hungry, Angry, Lonely, Tired).<br>0 = Neutral | 15 = Very bad.</h2>
 </body>
 </html>

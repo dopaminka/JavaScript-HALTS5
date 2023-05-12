@@ -135,14 +135,23 @@ input[type=range]::-moz-range-track {
     height: 30px; /* Set the height of the slider track */
     background: #ccc; /* Set the background color of the slider track */
 }
-#sortBtn{ 
-margin-bottom: 6px;}
 
+.button-container {
+    display: flex;
+    justify-content: space-between; /* This will distribute the buttons evenly across the full width */
+    max-width: 1000px; /* This is your maximum width */
+    width: 100%; /* This will make it responsive */
+    margin-left: auto; /* These two lines will center the button container horizontally */
+    margin-right: auto;
+}
+#sortBtn{ 
+ flex: 1;} 
+ 
 #exportBtn{ 
-margin-bottom: 6px;}
+ flex: 1;} 
 
 #resetBtn{ 
-margin-bottom: 6px;}
+ flex: 1;} 
 
 .link-button {
     display: block;
@@ -161,7 +170,7 @@ margin-bottom: 6px;}
 </head>
 <body>
     <h1>🔴 HALTS 🔴</h1>
-	<div class="legend">
+<div class="legend">
 	<span class="example">Example:</span>
     <span class="left">-15: Not Hungry</span>
     <span class="center">0: Neutral</span>
@@ -170,14 +179,15 @@ margin-bottom: 6px;}
 </div>
 	<!--<p class="p1">-15: Not Hungry | 0: Neutral | +15: Starving</p> <h2>-15 = can be ignored	|	0 = Neutral	|	15 = Very bad.</h2>-->
     <!-- Create a container to hold the topics list and the sort button -->
-    <div class="container">
+<div class="container">
         <!-- Create an element to hold the topics list -->
-        <div id="topicsList"></div>
+<div id="topicsList"></div>
         <!-- Create a sort button -->
-        <button id="sortBtn">Sort</button>
-		<!-- Add an export button after the sort button -->
-		<button id="exportBtn">Export to Clipboard</button>
-		<button id="resetBtn">Reset</button>
+<div class="button-container">
+    <button id="sortBtn">Sort</button>
+    <button id="exportBtn">Export to Clipboard</button>
+    <button id="resetBtn">Reset</button>
+</div>
 	
 
 

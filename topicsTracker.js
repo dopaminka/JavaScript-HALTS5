@@ -7,7 +7,7 @@ const topics = {
     "☹ Sad": 0,
     "😒 Bored": 0,
 	"⚡ Pain": 0,
-	"🔞 Craving / desire": 0,
+	"🔞 Urges": 0,
 };
 
 function displayTopics() {

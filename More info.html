@@ -11,9 +11,19 @@
       line-height: normal;
 	   font-family: 'Nunito', Arial, sans-serif;
     }
+	.page{
+	display: flex
+	flex-direction: column;
 	
+	 width: 100%
+	}
 	pre {
 	 font-family: 'Nunito', Arial, sans-serif;
+	  white-space: pre-wrap;       /* CSS 2.1 */
+        white-space: -moz-pre-wrap;  /* Firefox 1.0-2.0 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
 	 }
 	
 	.link-button {
@@ -46,9 +56,10 @@
 
 
 <body>
+<div class="page">
 <h1 id="Top">Coping strategies for needs and triggers from HALTS</h1>
 
-<a href="index.html" class="link-button">Back to HALTS</a>
+<a href="index.html" class="link-button">🔴 Back to HALTS</a>
 
 <ul id="index">
     <li><a href="#Hungry">🍗 Hungry</a></li>
@@ -343,7 +354,7 @@ Here are a few more short tips for managing tiredness during recovery:
 • Gratitude list
 • Praying
 • Changing environment</pre>
-
+</div>
 <a href="#Top" class="Topp">🔝 Back to the top</a>
 <a href="index.html" class="link-button">🔴 Back to HALTS</a>
 

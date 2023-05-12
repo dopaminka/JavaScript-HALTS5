@@ -18,6 +18,11 @@
     text-align: center;
 	font-size: 13px;
 }
+p {
+ margin-top: 5px;
+    text-align: center;
+	font-size: 13px;
+}
     /* Set the default font for the entire document (body) */
     body {
        font-family: 'Nunito', Arial, sans-serif;
@@ -29,7 +34,6 @@
          display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
     max-width: 1000px; /* Set a maximum width for the container */
     margin-left: auto; /* Center the container horizontally */
     margin-right: auto;
@@ -40,7 +44,6 @@
     #topicsList {
          margin-bottom: 0px;
     min-width: 330px;
-    background-color: white;
     width: 100%; /* Make it responsive to the container width */
     }
     
@@ -49,7 +52,6 @@
          display: flex;
     align-items: center;
     margin-bottom: 10px;
-    background-color: white;
     width: 100%; /* Make it responsive to the container width */
 		
     }
@@ -58,7 +60,6 @@
     .slider-container {
          display: flex;
     text-align: center;
-    background-color: white;
     width: 100%; /* Make it responsive to the container width */
     } 
 	.topic-info {
@@ -68,7 +69,6 @@
 font-size: 13px;
 letter-spacing: -0.2px;
         text-align: left;         /* Center the text of each element */
-		background-color: white
 		
     }
     .edit-name-btn,
@@ -78,7 +78,6 @@ letter-spacing: -0.2px;
 		min-width: 48px;
 		max-width: 48px;
 		font-size: 12px;
-		background-color: white
 		
 		
     }
@@ -91,7 +90,6 @@ letter-spacing: -0.2px;
 		font-size: 12px;
 		letter-spacing: -0.2px;
 		margin-left: 1px;
-		background-color: white
     }
 	
 	
@@ -149,7 +147,8 @@ margin-bottom: 6px;}
 
 </head>
 <body>
-    <h1>HALTS</h1>
+    <h1>🔴 HALTS 🔴</h1>
+	<h2>-15 to 5 = can be ignored	|	0 = Neutral	| 5 to 15 = Very bad.</h2>
     <!-- Create a container to hold the topics list and the sort button -->
     <div class="container">
         <!-- Create an element to hold the topics list -->
@@ -166,7 +165,7 @@ margin-bottom: 6px;}
     </div>
     <!-- Include the JavaScript file to handle the logic -->
     <script src="topicsTracker.js"></script>
-	<h2>An app for recovering addicts, that may help developing a habit of identifying and tracking needs and triggers. <br>Based on the popular "HALT" (Hungry, Angry, Lonely, Tired).<br>0 = Neutral | 15 = Very bad.</h2>
+	<p><strong>What?</strong><br>This is an app that may help developing a habit of identifying and tracking needs and triggers. <br>Based on the popular "HALT" (Hungry, Angry, Lonely, Tired).<br> <strong><br>Who is it for?</strong><br>For for recovering addicts or whoever benefits from it<br><br><strong>What do i do next?</strong><p>
 		<!-- <button id="infoPageBtn">Information</button> -->
 		<a href="More info.html" class="link-button">Click here for coping strategies for needs and triggers from HALTS</a>
 </body>

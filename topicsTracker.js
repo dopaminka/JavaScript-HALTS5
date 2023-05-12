@@ -1,6 +1,5 @@
 const topics = {
     "🍗 Hungry": 0,
-    "🔞 Horny": 0,
     "🤬 Angry / agitated": 0,
     "😬 Anxious / stressed": 0,
     "👤 Lonely": 0,
@@ -8,6 +7,7 @@ const topics = {
     "☹ Sad": 0,
     "😒 Bored": 0,
 	"⚡ Pain": 0,
+	"🔞 Craving / desire": 0,
 };
 
 function displayTopics() {
@@ -102,7 +102,7 @@ function sortTopics() {
 }
 function exportToClipboard() {
     const timestamp = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Warsaw', dateStyle: 'full', timeStyle: 'medium' }).format(new Date());
-    let data = `Timestamp: ${timestamp}\n\nTopic\tValue\n`;
+    let data = `Timestamp: ${timestamp}\n`; // \n\nTopic\tValue
     
     for (const [topic, value] of Object.entries(topics)) {
         data += `${topic}\t${value}\n`;

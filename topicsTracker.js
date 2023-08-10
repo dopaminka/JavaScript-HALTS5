@@ -8,6 +8,8 @@ const topics = {
     "😒 Bored": 0,
 	"⚡ Pain": 0,
 	"🔞 Urges": 0,
+    "😖 Overwhealmed": 0,
+    "🎭 Overall mood": 0,
 };
 
 function displayTopics() {

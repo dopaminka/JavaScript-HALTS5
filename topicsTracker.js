@@ -8,7 +8,7 @@ const topics = {
     "😒 Bored": 0,
 	"⚡ Pain": 0,
 	"🔞 Urges": 0,
-    "😖 Ovrwh.": 0,
+    "😖 Overwh.": 0,
     "🎭 Mood": 0,
 };
 

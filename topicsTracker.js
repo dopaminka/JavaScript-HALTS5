@@ -9,7 +9,7 @@ const topics = {
 	"⚡ Pain": 0,
 	"🔞 Urges": 0,
     "😖 Overwh.": 0,
-    "🎭 Mood": 0,
+    //"🎭 Mood": 0,
 };
 
 function displayTopics() {

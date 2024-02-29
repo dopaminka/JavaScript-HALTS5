@@ -104,7 +104,7 @@ function sortTopics() {
 }
 function exportToClipboard() {
     const timestamp = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Warsaw', dateStyle: 'full', timeStyle: 'medium' }).format(new Date());
-    let data = `Timestamp: ${timestamp}\n`; // \n\nTopic\tValue
+    let data = `Timestamp:\t${timestamp}\n`; // \n\nTopic\tValue
     
     for (const [topic, value] of Object.entries(topics)) {
         data += `${topic}\t${value}\n`;
